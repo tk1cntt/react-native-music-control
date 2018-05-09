@@ -4,19 +4,19 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:2.2.3'
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.3"
 
     defaultConfig {
         minSdkVersion 16 // RN's minimum version
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
         ndk {
@@ -37,5 +37,5 @@ repositories {
 
 dependencies {
     compile "com.facebook.react:react-native:+"
-    compile "com.android.support:support-v4:27.0.2"
+    compile "com.android.support:support-v4:26.1.0"
 }
