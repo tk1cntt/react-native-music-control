@@ -1,7 +1,6 @@
 buildscript {
     repositories {
         jcenter()
-        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
@@ -30,9 +29,11 @@ repositories {
         // As RN is not updated in jcenter anymore, we'll have to grab it from npm
         url "../node_modules/react-native/android"
     }
+    maven {
+        url "https*//maven.google.com"
+    }
     mavenCentral()
     jcenter()
-    google()
 }
 
 dependencies {
