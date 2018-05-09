@@ -30,7 +30,7 @@ repositories {
         url "../node_modules/react-native/android"
     }
     maven {
-        url "https*//maven.google.com"
+        url "https://maven.google.com"
     }
     mavenCentral()
     jcenter()
